@@ -1,226 +1,135 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junha Chun</title>
+  <meta name="description" content="Junha Chun, Ph.D. student at Seoul National University. Research in world models, latent actions, and robot learning.">
+  <meta name="author" content="Junha Chun">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Junha Chun">
+  <meta property="og:description" content="Ph.D. student at Seoul National University. Research in world models, latent actions, and robot learning.">
+  <meta property="og:url" content="https://nikriz1.github.io/">
+  <link rel="canonical" href="https://nikriz1.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <main>
+    <header class="profile-header">
+      <h1>Junha Chun</h1>
+      <div class="profile-bio">
+        <p>I am a Ph.D. student in Electrical and Computer Engineering at Seoul National University, advised by <a href="https://scholar.google.com/citations?user=7V7yNeoAAAAJ">Taesup Kim</a> in the Graduate School of Data Science. I received my B.S. in Electrical and Computer Engineering from Seoul National University.</p>
+        <p>My research interests are world models, latent action representations, and robot learning. I study representations of physical dynamics for visual generalization and efficient planning. I am also recently interested in agentic robotics, dexterous manipulation and tactile modality.</p>
+        <ul class="contact-links" aria-label="Contact and profiles">
+          <li><a href="mailto:nikriz@snu.ac.kr">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=7nalz60AAAAJ">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/junha-chun-8a24271a8/">LinkedIn</a></li>
+        </ul>
+      </div>
+      <img class="profile-photo" src="images/junha-chun.jpg" width="354" height="473" alt="Portrait of Junha Chun" decoding="async">
+    </header>
 
-    <title>Junha Chun</title>
+    <section aria-labelledby="publications">
+      <h2 id="publications">Publications</h2>
+      <p class="note">* Equal contribution.</p>
+      <ul class="publications">
+        <li>
+          <a class="paper-image" href="images/wam-priors.svg" aria-label="View figure for How Representational Priors Shape Generalization in World Action Models">
+            <img src="images/wam-priors.svg" width="875" height="455" alt="Representation geometry illustrating nuisance orthogonality and suppression" loading="eager" decoding="async">
+          </a>
+          <div class="paper-details">
+            <span class="paper-title">How Representational Priors Shape Generalization in World Action Models</span><br>
+          <strong>Junha Chun</strong>, Youngjoon Jeong, Taesup Kim<br>
+          <em>arXiv preprint, 2026.</em><br>
+          <a href="https://arxiv.org/abs/2610.29168">Paper</a>
+            <p class="paper-summary">We study how pretrained representation geometry relates to visual robustness in world action models.</p>
+          </div>
+        </li>
+        <li>
+          <a class="paper-image" href="images/polar.png" aria-label="View figure for PoLAR: Factorizing Extent and Mode in Latent Actions for Robot Policy Learning">
+            <img src="images/polar.png" width="1954" height="1266" alt="PoLAR separates transition extent and mode using radial and directional latent structure" loading="lazy" decoding="async">
+          </a>
+          <div class="paper-details">
+            <span class="paper-title">PoLAR: Factorizing Extent and Mode in Latent Actions for Robot Policy Learning</span><br>
+          Youngjoon Jeong, Jihwan Yu, Minsoo Jo, <strong>Junha Chun</strong>, Taesup Kim<br>
+          <em>Conference on Robot Learning (CoRL), 2026.</em><br>
+          <a href="https://arxiv.org/abs/2606.21139">Paper</a> · <a href="https://joon-stack.github.io/PoLAR/">Project</a>
+            <p class="paper-summary">PoLAR separates the extent and mode of visual transitions in latent actions to support robot policy learning.</p>
+          </div>
+        </li>
+        <li>
+          <a class="paper-image" href="images/joint-faults.png" aria-label="View figure for Uncovering Vulnerability of Vision-Language-Action Models under Joint-Level Physical Faults">
+            <img src="images/joint-faults.png" width="1732" height="419" alt="Robot rollouts comparing fault-free operation with faults in different joints" loading="lazy" decoding="async">
+          </a>
+          <div class="paper-details">
+            <span class="paper-title">Uncovering Vulnerability of Vision-Language-Action Models under Joint-Level Physical Faults</span><br>
+          Minsoo Jo*, Taeju Kwon*, <strong>Junha Chun</strong>, Youngjoon Jeong, Taesup Kim<br>
+          <em>arXiv preprint, 2026.</em><br>
+          <a href="https://arxiv.org/abs/2606.10501">Paper</a>
+            <p class="paper-summary">We analyze how joint-level faults affect vision-language-action policies and use residual action calibration to improve robustness.</p>
+          </div>
+        </li>
+        <li>
+          <a class="paper-image" href="images/vila.png" aria-label="View figure for Learning to Act Robustly with View-Invariant Latent Actions">
+            <img src="images/vila.png" width="962" height="694" alt="VILA aligns latent actions across camera views with action-aware contrastive learning" loading="lazy" decoding="async">
+          </a>
+          <div class="paper-details">
+            <span class="paper-title">Learning to Act Robustly with View-Invariant Latent Actions</span><br>
+          Youngjoon Jeong*, <strong>Junha Chun*</strong>, Taesup Kim<br>
+          <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.</em><br>
+          <a href="https://arxiv.org/abs/2601.02994">Paper</a> · <a href="https://joon-stack.github.io/VILA/">Project</a>
+            <p class="paper-summary">VILA learns view-invariant latent actions to help robot policies generalize to unseen camera viewpoints.</p>
+          </div>
+        </li>
+        <li>
+          <a class="paper-image" href="images/sparse-planning.png" aria-label="View figure for Sparse Imagination for Efficient Visual World Model Planning">
+            <img src="images/sparse-planning.png" width="1749" height="745" alt="Sparse Imagination plans with a subset of visual tokens during world-model rollouts" loading="lazy" decoding="async">
+          </a>
+          <div class="paper-details">
+            <span class="paper-title">Sparse Imagination for Efficient Visual World Model Planning</span><br>
+          <strong>Junha Chun*</strong>, Youngjoon Jeong*, Taesup Kim<br>
+          <em>International Conference on Learning Representations (ICLR), 2026.</em><br>
+          <a href="https://arxiv.org/abs/2506.01392">Paper</a> · <a href="https://nikriz1.github.io/sparse_imagination/">Project</a> · <a href="https://openreview.net/forum?id=faxcxKINBC">OpenReview</a>
+            <p class="paper-summary">Sparse Imagination reduces world-model planning cost by predicting future states with a subset of visual tokens.</p>
+          </div>
+        </li>
+        <li>
+          <a class="paper-image" href="images/ocwm.png" aria-label="View figure for Object-centric world model for language-guided manipulation">
+            <img src="images/ocwm.png" width="494" height="480" alt="Language instructions condition an autoregressive world model of object representations" loading="lazy" decoding="async">
+          </a>
+          <div class="paper-details">
+            <span class="paper-title">Object-centric world model for language-guided manipulation</span><br>
+          Youngjoon Jeong*, <strong>Junha Chun*</strong>, Soonwoo Cha, Taesup Kim<br>
+          <em>ICLR World Model Workshop, 2025.</em><br>
+          <a href="https://arxiv.org/abs/2503.06170">Paper</a>
+            <p class="paper-summary">An object-centric world model predicts future object representations from language instructions for robot manipulation.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-    <meta name="author" content="Junha Chun">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <ul>
+        <li><strong>Ph.D. in Electrical and Computer Engineering</strong>, Seoul National University, Mar 2019 – Present.<br>
+          Advisor: Taesup Kim (since Mar 2023); previously Sangkyun Cha (Mar 2019 – Feb 2023).</li>
+        <li><strong>B.S. in Electrical and Computer Engineering</strong>, Seoul National University, Mar 2015 – Feb 2019.</li>
+      </ul>
+    </section>
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Junha Chun
-                </p>
-               
-                <p>
-		I am a Ph.D. student in the Electrical and Computer Engineering at Seoul National University, advised by <a href="https://scholar.google.com/citations?user=7V7yNeoAAAAJ&hl=ko">Taesup Kim</a> of Graduate School of Data Science.
-		I received my B.S. in Electrical and Computer Engineering from Seoul National University.
-		I am broadly interested in physical AI and VLA.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:nikriz@snu.ac.kr">Email</a> &nbsp;/&nbsp;
-                  <a href="https://docs.google.com/document/d/1VZhoVtw23VqiiclcrGj0DwxU5jBsEKVZ/edit?usp=sharing&ouid=114764800816233192108&rtpof=true&sd=true">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=7nalz60AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/nikriz">Github</a> &nbsp;/&nbsp;
-                  <a href="https://nikriz.github.io/">LinkedIn</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/junha.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/junha.jpeg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research Interests</h2>
-                <p>
-                  -
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
-                <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                  <!-- <tr bgcolor="#ffffd0"> -->
 
-                    <td style="padding:16px;width:20%;vertical-align:middle">
-                      <img src="images/sparseimag.png" style="width:100%;height:auto;border-radius:6px;" alt="Sparse Imagination thumbnail">
-                    </td>
-                    <td style="padding:8px;width:80%;vertical-align:middle">
-                      <a href="https://openreview.net/forum?id=faxcxKINBC">
-                        <span class="papertitle">Sparse Imagination for Efficient Visual World Model Planning</span>
-                      </a>
-                      <br>
-                      <strong>J. Chun*</strong>, Y. Jeong*, T. Kim
-                      <br>
-                      <em>International Conference on Learning Representations</em>, 2026 &nbsp; (* Equal Contribution)
-                      <br>
-                      <!-- <a href="https://openreview.net/forum?id=faxcxKINBC">OpenReview</a> / -->
-                      <a href="https://arxiv.org/abs/2506.01392">arXiv</a>
-                    </td>
+    <section aria-labelledby="honors">
+      <h2 id="honors">Grants and Honors</h2>
+      <ul>
+        <li><strong>NVIDIA Academic Grant</strong>, Jul–Dec 2026.<br>
+          Temporally-Structured World Action Models for Reliable Robotics Planning. Compute support: 8 × H100 GPUs.</li>
+        <li><strong>National Science &amp; Technology Scholarship</strong>, 2015–2019. Full-tuition scholarship.</li>
+      </ul>
+    </section>
 
-                  </tr>
-                  <tr>
-                    <td style="padding:16px;width:20%;vertical-align:middle">
-                      <img src="images/vila.png" style="width:100%;height:auto;border-radius:6px;" alt="VILA thumbnail">
-                    </td>
-                    <td style="padding:8px;width:80%;vertical-align:middle">
-                      <a href="https://joon-stack.github.io/VILA/">
-                        <span class="papertitle">Learning to Act Robustly with View-Invariant Latent Actions</span>
-                      </a>
-                      <br>
-                      Y. Jeong*,<strong>J. Chun*</strong>, T. Kim
-                      <br>
-                      <em>arXiv</em>, 2026 &nbsp; (* Equal Contribution)
-                      <br>
-                      <a href="https://joon-stack.github.io/VILA/">project page</a> /
-                      <a href="https://arxiv.org/abs/2601.02994">arXiv</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding:16px;width:20%;vertical-align:middle">
-                      <img src="images/ocwm.png" style="width:100%;height:auto;border-radius:6px;" alt="Object-centric world model thumbnail">
-                    </td>
-                    <td style="padding:8px;width:80%;vertical-align:middle">
-                      <a href="https://arxiv.org/abs/2503.06170">
-                        <span class="papertitle">Object-centric world model for language-guided manipulation</span>
-                      </a>
-                      <br>
-                      Y. Jeong*, <strong>J. Chun*</strong>, S. Cha, T. Kim
-                      <br>
-                      <em>ICLR World Model Workshop</em>, 2025 &nbsp; (* Equal Contribution)
-                      <br>
-                      <a href="https://arxiv.org/abs/2503.06170">arXiv</a>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <td style="padding:16px;width:20%;vertical-align:middle">
-                      <img src="images/paper_placeholder.svg" style="width:100%;height:auto;border-radius:6px;" alt="Piecewise PINN thumbnail">
-                    </td>
-                    <td style="padding:8px;width:80%;vertical-align:middle">
-                      <a href="https://ieeexplore.ieee.org/abstract/document/10716635/">
-                        <span class="papertitle">Towards Generalized Visualization System for Various CNN Models: Module and Layer View</span>
-                      </a>
-                      <br>
-                      Y. Kim, <strong>J. Chun</strong>, S. Son, H. Park
-                      <br>
-                      <em>IEEE Access</em>, 2024
-                      <br>
-                      <a href="https://ieeexplore.ieee.org/abstract/document/10716635/">journal</a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td style="padding:16px;width:20%;vertical-align:middle">
-                      <img src="images/paper_placeholder.svg" style="width:100%;height:auto;border-radius:6px;" alt="Data-efficient surrogate modeling thumbnail">
-                    </td>
-                    <td style="padding:8px;width:80%;vertical-align:middle">
-                      <a href="https://arxiv.org/pdf/2007.03169">
-                        <span class="papertitle">Spatial semantic embedding network: Fast 3d instance segmentation with deep metric learning</span>
-                      </a>
-                      <br>
-                      D. Zhang, <strong>J. Chun</strong>, S. Cha, Y. Kim
-                      <br>
-                      <em>arXiv</em>, 2020
-                      <br>
-                      <a href="https://arxiv.org/pdf/2007.03169">arXiv</a>
-                    </td>
-                  </tr>
-                </tbody></table>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Education</h2>
-                <p>
-                  Ph.D. in Electrical and Computer Engineering, Seoul National University, Mar 2019 &ndash; Present 
-                  <br>
-                  &nbsp;&nbsp;&nbsp;&nbsp; Advisor: Taesup Kim (since Mar 2023)
-                  <br>
-                  &nbsp;&nbsp;&nbsp;&nbsp; Previously advised by Sangkyun Cha (Mar 2019 &ndash; Feb 2023)
-                  <br>
-                  B.S. in Electrical and Computer Engineering, Seoul National University, Mar 2015 &ndash; Feb 2019 
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Skills</h2>
-                <p>
-                  Deep Learning: PyTorch, Lightning, Accelerate, TensorFlow
-                  <br>
-                  Robotics Software: HuggingFace LeRobot, MuJoCo
-                  <br>
-                  Robotics Hardware: Experience with LeRobot SO-101, Trossen Robotics WidowX
-                  <br>
-                  Software/Tooling: C++, Python, Linux, Git, Slurm
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Awards &amp; Honors</h2>
-                <p>
-                  Full-tuition scholarship: National Science & Technology Scholarship (2015–2019) 
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Teaching</h2>
-                <p>
-                  M3225.001200 Programming for Data Science: Teaching Assistant (Fall 2025)
-                  <br>
-                  M3239.005100 Big Data and Knowledge Management System II: Teaching Assistant (Fall 2022)
-                  <br>
-                  M3239.000900 Data Science Seminar - Big Data, AI, and Innovation Ⅰ: Teaching Assistant (Spring 2020)
-                  <br>
-                  M2608.001600 Electrical and Computer Engineering Seminar III: Teaching Assistant (Spring 2019)
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  
-                  This website was forked from <a href="https://github.com/jonbarron/jonbarron_website">here</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+    <footer>Last updated: November 2026.</footer>
+  </main>
+</body>
 </html>
